@@ -1,4 +1,4 @@
-package parcialfinalpoo
+package parcialfinalpoo;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -16,6 +16,7 @@ public class Servidor {
                 Thread hilo = new Thread((Runnable) manejador);
                 hilo.start(); // Lanza el hilo
             }
+        }
 
         } catch (IOException e) {
             System.err.println("Error en el servidor: " + e.getMessage());
